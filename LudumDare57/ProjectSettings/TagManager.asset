@@ -41,10 +41,10 @@ TagManager:
   - name: Far Background
     uniqueID: 934671455
     locked: 0
-  - name: Background
+  - name: Close Background
     uniqueID: 209323049
     locked: 0
-  - name: Midground
+  - name: Far Midground
     uniqueID: 3057150097
     locked: 0
   - name: Default
@@ -53,9 +53,9 @@ TagManager:
   - name: Close Midround
     uniqueID: 2077254217
     locked: 0
-  - name: Foreground
-    uniqueID: 1351867067
-    locked: 0
   - name: UI
     uniqueID: 1236440391
+    locked: 0
+  - name: Foreground
+    uniqueID: 2759039871
     locked: 0
