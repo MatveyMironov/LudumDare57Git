@@ -2212,7 +2212,7 @@ PrefabInstance:
     - target: {fileID: 5757503174859194202, guid: f5eb6bc407ae2a744964c725ab272251, type: 3}
       propertyPath: cameraTransform
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 839079307739681920}
     - target: {fileID: 9113108597955997373, guid: f5eb6bc407ae2a744964c725ab272251, type: 3}
       propertyPath: m_text
       value: Even with flashlight switched off my suit can be seen. Maybe i could
@@ -4466,7 +4466,7 @@ PrefabInstance:
     - target: {fileID: 5757503174859194202, guid: f5eb6bc407ae2a744964c725ab272251, type: 3}
       propertyPath: cameraTransform
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 839079307739681920}
     - target: {fileID: 9113108597955997373, guid: f5eb6bc407ae2a744964c725ab272251, type: 3}
       propertyPath: m_text
       value: Oxygen Cylinder! So I won't suffocate to death. That's a relief.
@@ -4865,7 +4865,7 @@ PrefabInstance:
     - target: {fileID: 5757503174859194202, guid: f5eb6bc407ae2a744964c725ab272251, type: 3}
       propertyPath: cameraTransform
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 839079307739681920}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -7180,7 +7180,7 @@ PrefabInstance:
     - target: {fileID: 5757503174859194202, guid: f5eb6bc407ae2a744964c725ab272251, type: 3}
       propertyPath: cameraTransform
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 839079307739681920}
     - target: {fileID: 9113108597955997373, guid: f5eb6bc407ae2a744964c725ab272251, type: 3}
       propertyPath: m_text
       value: 'This cavern is dark and huge. I should increase flashlight power.
@@ -10188,7 +10188,7 @@ PrefabInstance:
     - target: {fileID: 5757503174859194202, guid: f5eb6bc407ae2a744964c725ab272251, type: 3}
       propertyPath: cameraTransform
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 839079307739681920}
     - target: {fileID: 9113108597955997373, guid: f5eb6bc407ae2a744964c725ab272251, type: 3}
       propertyPath: m_text
       value: This light sticks were used by previous expedition to mark path to important
@@ -10330,7 +10330,7 @@ PrefabInstance:
     - target: {fileID: 5757503174859194202, guid: f5eb6bc407ae2a744964c725ab272251, type: 3}
       propertyPath: cameraTransform
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 839079307739681920}
     - target: {fileID: 9113108597955997373, guid: f5eb6bc407ae2a744964c725ab272251, type: 3}
       propertyPath: m_text
       value: 'Abyssal beasts are attracted by light. Maybe I should switch my flashlight
