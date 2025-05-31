@@ -5,14 +5,12 @@ namespace MovementSystem
     [RequireComponent(typeof(Rigidbody2D))]
     public class MBMovementController : MonoBehaviour, IMovementController
     {
-        [SerializeField] private float _movementSpeed;
-        [SerializeField] private float _acceleration;
-        [SerializeField] private float _deceleration;
+        [SerializeField] private AMBMovementParameters parameters;
         [SerializeField] private Animator animator;
 
         private Rigidbody2D _rigidbody;
 
-        private Vector2 _targetVelocity;
+        private Vector2 _targetDirection;
         private float _targetAngle;
 
         private int _animatorSwimmingHash;
@@ -25,27 +23,27 @@ namespace MovementSystem
 
         private void FixedUpdate()
         {
-            if (_targetVelocity == Vector2.zero)
+            if (_targetDirection == Vector2.zero)
             {
                 if (_rigidbody.velocity != Vector2.zero)
                 {
-                    _rigidbody.velocity = Vector2.MoveTowards(_rigidbody.velocity, Vector2.zero, _deceleration * Time.fixedDeltaTime);
+                    _rigidbody.velocity = Vector2.MoveTowards(_rigidbody.velocity, Vector2.zero, parameters.Deceleration * Time.fixedDeltaTime);
                 }
             }
             else
             {
                 _rigidbody.rotation = Mathf.MoveTowardsAngle(_rigidbody.rotation, _targetAngle, 200.0f * Time.fixedDeltaTime);
 
-                if (_rigidbody.velocity != _targetVelocity)
+                if (_rigidbody.velocity != _targetDirection * parameters.Speed)
                 {
-                    _rigidbody.velocity = Vector2.MoveTowards(_rigidbody.velocity, _targetVelocity, _acceleration * Time.fixedDeltaTime);
+                    _rigidbody.velocity = Vector2.MoveTowards(_rigidbody.velocity, _targetDirection * parameters.Speed, parameters.Acceleration * Time.fixedDeltaTime);
                 }
             }
         }
 
         public void Move(Vector2 direction)
         {
-            _targetVelocity = direction * _movementSpeed;
+            _targetDirection = direction;
             _targetAngle = Mathf.Atan2(direction.y, direction.x) * Mathf.Rad2Deg - 90.0f;
             
             if (direction.x < -0.01f)

@@ -14955,6 +14955,14 @@ PrefabInstance:
       propertyPath: m_LocalPosition.y
       value: -34.3
       objectReference: {fileID: 0}
+    - target: {fileID: 6785686254263940067, guid: 2fea4681340b8bd4f8a3af74e21ddeda, type: 3}
+      propertyPath: field of view
+      value: 34
+      objectReference: {fileID: 0}
+    - target: {fileID: 6785686254263940067, guid: 2fea4681340b8bd4f8a3af74e21ddeda, type: 3}
+      propertyPath: orthographic size
+      value: 6
+      objectReference: {fileID: 0}
     - target: {fileID: 7457733023642394896, guid: 2fea4681340b8bd4f8a3af74e21ddeda, type: 3}
       propertyPath: m_LocalPosition.x
       value: -124.1
@@ -15489,6 +15497,28 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 6700751166065626150, guid: 2fea4681340b8bd4f8a3af74e21ddeda, type: 3}
   m_PrefabInstance: {fileID: 839079307739681919}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &839079307739681923 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 4013817815329891591, guid: 2fea4681340b8bd4f8a3af74e21ddeda, type: 3}
+  m_PrefabInstance: {fileID: 839079307739681919}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1109202517}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2de85f759bd0bf041a80fad3d8803054, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &839079307739681924 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 4170626692349493291, guid: 2fea4681340b8bd4f8a3af74e21ddeda, type: 3}
+  m_PrefabInstance: {fileID: 839079307739681919}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1109202517}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cbaf41c6dd312474695224d80dd56fbb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!114 &2499733298720730562 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 7777105384922356752, guid: 122aa68025c782a47867dc54b1d8228d, type: 3}
@@ -15957,6 +15987,10 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 1450319271}
     - target: {fileID: 4418308187271014831, guid: 904dd08147a38c149b914ffce379344b, type: 3}
+      propertyPath: speedUpController
+      value: 
+      objectReference: {fileID: 839079307739681923}
+    - target: {fileID: 4418308187271014831, guid: 904dd08147a38c149b914ffce379344b, type: 3}
       propertyPath: movementController
       value: 
       objectReference: {fileID: 1450319261}
@@ -15964,6 +15998,10 @@ PrefabInstance:
       propertyPath: interactionController
       value: 
       objectReference: {fileID: 56089741}
+    - target: {fileID: 4418308187271014831, guid: 904dd08147a38c149b914ffce379344b, type: 3}
+      propertyPath: movementParametersSpeedUpController
+      value: 
+      objectReference: {fileID: 839079307739681924}
     - target: {fileID: 4554369742192295358, guid: 904dd08147a38c149b914ffce379344b, type: 3}
       propertyPath: gameWinMenu
       value: 

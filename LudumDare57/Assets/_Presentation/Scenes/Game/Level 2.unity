@@ -8079,6 +8079,10 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 1624332294}
     - target: {fileID: 4418308187271014831, guid: 904dd08147a38c149b914ffce379344b, type: 3}
+      propertyPath: speedUpController
+      value: 
+      objectReference: {fileID: 1912487940}
+    - target: {fileID: 4418308187271014831, guid: 904dd08147a38c149b914ffce379344b, type: 3}
       propertyPath: movementController
       value: 
       objectReference: {fileID: 1624332295}
@@ -8086,6 +8090,10 @@ PrefabInstance:
       propertyPath: interactionController
       value: 
       objectReference: {fileID: 1624332293}
+    - target: {fileID: 4418308187271014831, guid: 904dd08147a38c149b914ffce379344b, type: 3}
+      propertyPath: movementParametersSpeedUpController
+      value: 
+      objectReference: {fileID: 1912487938}
     - target: {fileID: 4554369742192295358, guid: 904dd08147a38c149b914ffce379344b, type: 3}
       propertyPath: gameWinMenu
       value: 
@@ -22521,6 +22529,28 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 6871952814106734823, guid: 6d1753159cba96249b89f4b4bb300387, type: 3}
   m_PrefabInstance: {fileID: 1907605149}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &1912487938 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 4170626692349493291, guid: 2fea4681340b8bd4f8a3af74e21ddeda, type: 3}
+  m_PrefabInstance: {fileID: 1980011913}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1624332297}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cbaf41c6dd312474695224d80dd56fbb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &1912487940 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 4013817815329891591, guid: 2fea4681340b8bd4f8a3af74e21ddeda, type: 3}
+  m_PrefabInstance: {fileID: 1980011913}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1624332297}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2de85f759bd0bf041a80fad3d8803054, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!4 &1914829051 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 8717180999434932777, guid: 592737f708632734e964412cb4c3b458, type: 3}
@@ -23420,6 +23450,14 @@ PrefabInstance:
       propertyPath: m_LocalScale.y
       value: 2
       objectReference: {fileID: 0}
+    - target: {fileID: 3627311390199493195, guid: 2fea4681340b8bd4f8a3af74e21ddeda, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -2.27
+      objectReference: {fileID: 0}
+    - target: {fileID: 3627311390199493195, guid: 2fea4681340b8bd4f8a3af74e21ddeda, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -27.6
+      objectReference: {fileID: 0}
     - target: {fileID: 3919031817436125844, guid: 2fea4681340b8bd4f8a3af74e21ddeda, type: 3}
       propertyPath: m_LocalBounds.m_Center.x
       value: 0.024600029
@@ -23444,6 +23482,14 @@ PrefabInstance:
       propertyPath: OnDeath.m_PersistentCalls.m_Calls.Array.data[1].m_Target
       value: 
       objectReference: {fileID: 681205530}
+    - target: {fileID: 6785686254263940067, guid: 2fea4681340b8bd4f8a3af74e21ddeda, type: 3}
+      propertyPath: field of view
+      value: 34
+      objectReference: {fileID: 0}
+    - target: {fileID: 6785686254263940067, guid: 2fea4681340b8bd4f8a3af74e21ddeda, type: 3}
+      propertyPath: orthographic size
+      value: 6
+      objectReference: {fileID: 0}
     - target: {fileID: 8038069004793001639, guid: 2fea4681340b8bd4f8a3af74e21ddeda, type: 3}
       propertyPath: showNavGraphs
       value: 1

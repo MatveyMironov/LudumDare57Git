@@ -3,6 +3,7 @@ using FlashlightSystem;
 using GameSystem.Pause;
 using InteractionSystem;
 using MovementSystem;
+using SpeedUpSystem;
 using System;
 using UnityEngine;
 using UnityEngine.InputSystem;
@@ -12,6 +13,7 @@ namespace InputActionsManagerSystem
     public class InputListener
     {
         private readonly IMovementController _movementController;
+        private readonly ISpeedUpController _speedUpController;
         private readonly ILookController _lookController;
         private readonly IInteractionController _interactionController;
         private readonly IFlashlight _flashlight;
@@ -21,6 +23,7 @@ namespace InputActionsManagerSystem
         private PlayerControls _playerControls;
 
         public InputListener(IMovementController movementController,
+                             ISpeedUpController speedUpController,
                              ILookController lookController,
                              IInteractionController interactionController,
                              IFlashlight flashlight,
@@ -28,6 +31,7 @@ namespace InputActionsManagerSystem
                              IDecoyUser decoyUser)
         {
             _movementController = movementController ?? throw new ArgumentNullException(nameof(movementController));
+            _speedUpController = speedUpController ?? throw new ArgumentNullException(nameof(speedUpController));
             _lookController = lookController ?? throw new ArgumentNullException(nameof(lookController));
             _interactionController = interactionController ?? throw new ArgumentNullException(nameof(interactionController));
             _flashlight = flashlight ?? throw new ArgumentNullException(nameof(flashlight));
@@ -42,6 +46,9 @@ namespace InputActionsManagerSystem
             _playerControls.Movement.Move.started += OnMoveInput;
             _playerControls.Movement.Move.performed += OnMoveInput;
             _playerControls.Movement.Move.canceled += OnMoveInput;
+
+            _playerControls.Movement.SpeedUp.started += OnSpeedUpInput;
+            _playerControls.Movement.SpeedUp.canceled += OnSpeedUpInput;
 
             _playerControls.Movement.Look.started += OnLookInput;
             _playerControls.Movement.Look.performed += OnLookInput;
@@ -58,19 +65,24 @@ namespace InputActionsManagerSystem
 
         public void UnsetupInputActions()
         {
-            _playerControls.Movement.Move.started += OnMoveInput;
-            _playerControls.Movement.Move.performed += OnMoveInput;
-            _playerControls.Movement.Move.canceled += OnMoveInput;
+            _playerControls.Movement.Move.started -= OnMoveInput;
+            _playerControls.Movement.Move.performed -= OnMoveInput;
+            _playerControls.Movement.Move.canceled -= OnMoveInput;
 
-            _playerControls.Movement.Look.started += OnLookInput;
-            _playerControls.Movement.Look.performed += OnLookInput;
-            _playerControls.Movement.Look.canceled += OnLookInput;
+            _playerControls.Movement.SpeedUp.started -= OnSpeedUpInput;
+            _playerControls.Movement.SpeedUp.canceled -= OnSpeedUpInput;
 
-            _playerControls.Interaction.Interact.performed += OnInteractInput;
+            _playerControls.Movement.Look.started -= OnLookInput;
+            _playerControls.Movement.Look.performed -= OnLookInput;
+            _playerControls.Movement.Look.canceled -= OnLookInput;
 
-            _playerControls.Flashlight.SwitchMode.performed += OnSwitchModeInput;
+            _playerControls.Interaction.Interact.performed -= OnInteractInput;
 
-            _playerControls.Pause.TogglePause.performed += OnPauseInput;
+            _playerControls.Flashlight.SwitchMode.performed -= OnSwitchModeInput;
+
+            _playerControls.Pause.TogglePause.performed -= OnPauseInput;
+
+            _playerControls.Decoy.UseDecoy.performed -= OnUseDecoyInput;
         }
 
         private void OnMoveInput(InputAction.CallbackContext context)
@@ -79,10 +91,14 @@ namespace InputActionsManagerSystem
             _movementController.Move(movementInput);
         }
 
+        private void OnSpeedUpInput(InputAction.CallbackContext context)
+        {
+            _speedUpController.DoSpeedUp = context.ReadValueAsButton();
+        }
+
         private void OnLookInput(InputAction.CallbackContext context)
         {
-            Vector2 lookInput = context.ReadValue<Vector2>();
-            _lookController.LookAt(lookInput);
+            _lookController.LookAt(context.ReadValue<Vector2>());
         }
 
         private void OnInteractInput(InputAction.CallbackContext context)
