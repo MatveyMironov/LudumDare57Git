@@ -2868,7 +2868,7 @@ PrefabInstance:
     - target: {fileID: 3521720008394984677, guid: 122aa68025c782a47867dc54b1d8228d, type: 3}
       propertyPath: oxygenTank
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 1455866359}
     - target: {fileID: 4031457140670929215, guid: 122aa68025c782a47867dc54b1d8228d, type: 3}
       propertyPath: m_AnchorMax.y
       value: 0
@@ -8085,7 +8085,7 @@ PrefabInstance:
     - target: {fileID: 4418308187271014831, guid: 904dd08147a38c149b914ffce379344b, type: 3}
       propertyPath: movementController
       value: 
-      objectReference: {fileID: 1624332295}
+      objectReference: {fileID: 1912487938}
     - target: {fileID: 4418308187271014831, guid: 904dd08147a38c149b914ffce379344b, type: 3}
       propertyPath: interactionController
       value: 
@@ -18804,17 +18804,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9ce8b88d2a01d614dba3ac38e1719441, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
---- !u!114 &1624332295 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 3737010185119496669, guid: 2fea4681340b8bd4f8a3af74e21ddeda, type: 3}
-  m_PrefabInstance: {fileID: 1980011913}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1624332297}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 06226ee97a5c4354993c5e68cf3c5199, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1 &1624332297 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 3457511361348847357, guid: 2fea4681340b8bd4f8a3af74e21ddeda, type: 3}
@@ -22537,7 +22526,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 1624332297}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: cbaf41c6dd312474695224d80dd56fbb, type: 3}
+  m_Script: {fileID: 11500000, guid: 5f18aeb25da6bb4468bf6efe7992b886, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
 --- !u!114 &1912487940 stripped

@@ -1,9 +1,11 @@
 using SpeedUpSystem;
+using System;
 using UnityEngine;
 
 namespace MovementSystem
 {
-    public class MBSpeedUpControllerMovementParameters : AMBMovementParameters
+    [Serializable]
+    public class SerializableSpeedUpMovementParameters : IMovementParameters
     {
         [SerializeField] private float defaultSpeed;
         [SerializeField] private float defaultAcceleration;
@@ -18,8 +20,8 @@ namespace MovementSystem
         [SerializeField] private MBSpeedUpController speedUpController;
 
         private bool DoSpeedUp { get { return speedUpController.DoSpeedUp; } }
-        public override float Speed { get { return DoSpeedUp ? speedUpSpeed : defaultSpeed; } }
-        public override float Acceleration { get { return DoSpeedUp ? speedUpAcceleration : defaultAcceleration; } }
-        public override float Deceleration { get { return DoSpeedUp ? speedUpDeceleration : defaultDeceleration; } }
+        public float Speed { get { return DoSpeedUp ? speedUpSpeed : defaultSpeed; } }
+        public float Acceleration { get { return DoSpeedUp ? speedUpAcceleration : defaultAcceleration; } }
+        public float Deceleration { get { return DoSpeedUp ? speedUpDeceleration : defaultDeceleration; } }
     }
 }

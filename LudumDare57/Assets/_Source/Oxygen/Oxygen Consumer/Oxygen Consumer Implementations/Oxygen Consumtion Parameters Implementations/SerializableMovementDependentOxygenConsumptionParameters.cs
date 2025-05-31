@@ -8,7 +8,7 @@ namespace OxygenConsumerSystem
     [Serializable]
     public class SerializableMovementDependentOxygenConsumptionParameters : IOxygenConsumptionParameters
     {
-        [SerializeField] private MBMovementController movementController;
+        [SerializeField] private AMBMovementController movementController;
         [SerializeField] private MBSpeedUpController speedUpController;
 
         [Space]

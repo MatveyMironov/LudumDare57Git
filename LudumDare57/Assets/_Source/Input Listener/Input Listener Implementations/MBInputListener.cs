@@ -11,7 +11,7 @@ namespace InputActionsManagerSystem
 {
     public class MBInputListener : MonoBehaviour
     {
-        [SerializeField] private MBMovementController movementController;
+        [SerializeField] private AMBMovementController movementController;
         [SerializeField] private MBSpeedUpController speedUpController;
         [SerializeField] private MBLookController lookController;
         [SerializeField] private MBInteractionController interactionController;

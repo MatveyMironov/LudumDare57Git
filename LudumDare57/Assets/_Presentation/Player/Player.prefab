@@ -286,7 +286,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   oxygenTank: {fileID: 2863167439773748902}
   oxygenConsumptionParameters:
-    movementController: {fileID: 6174691598275013967}
+    movementController: {fileID: 6885270854193910969}
     speedUpController: {fileID: 5899607437543633301}
     stillInhalesInterval: 1
     movingInhalesInterval: 0.5
@@ -511,7 +511,6 @@ GameObject:
   - component: {fileID: 6271100869343927156}
   - component: {fileID: 5899607437543633301}
   - component: {fileID: 6885270854193910969}
-  - component: {fileID: 6174691598275013967}
   - component: {fileID: 233166724832501847}
   - component: {fileID: 2356140483909293930}
   - component: {fileID: 5821707420553290615}
@@ -626,30 +625,18 @@ MonoBehaviour:
   m_GameObject: {fileID: 5302957767299322479}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: cbaf41c6dd312474695224d80dd56fbb, type: 3}
+  m_Script: {fileID: 11500000, guid: 5f18aeb25da6bb4468bf6efe7992b886, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  defaultSpeed: 5
-  defaultAcceleration: 10
-  defaultDeceleration: 10
-  speedUpSpeed: 10
-  speedUpAcceleration: 20
-  speedUpDeceleration: 10
-  speedUpController: {fileID: 5899607437543633301}
---- !u!114 &6174691598275013967
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5302957767299322479}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 06226ee97a5c4354993c5e68cf3c5199, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  parameters: {fileID: 6885270854193910969}
   animator: {fileID: 5440748273673892022}
+  parameters:
+    defaultSpeed: 5
+    defaultAcceleration: 10
+    defaultDeceleration: 15
+    speedUpSpeed: 10
+    speedUpAcceleration: 20
+    speedUpDeceleration: 15
+    speedUpController: {fileID: 5899607437543633301}
 --- !u!114 &233166724832501847
 MonoBehaviour:
   m_ObjectHideFlags: 0

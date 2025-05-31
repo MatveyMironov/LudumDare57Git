@@ -3,9 +3,8 @@ using UnityEngine;
 namespace MovementSystem
 {
     [RequireComponent(typeof(Rigidbody2D))]
-    public class MBMovementController : MonoBehaviour, IMovementController
+    public abstract class AMBMovementController : MonoBehaviour, IMovementController
     {
-        [SerializeField] private AMBMovementParameters parameters;
         [SerializeField] private Animator animator;
 
         private Rigidbody2D _rigidbody;
@@ -15,7 +14,9 @@ namespace MovementSystem
 
         private int _animatorSwimmingHash;
 
-        public Vector2 TargetVelocity { get { return _targetDirection * parameters.Speed; } }
+        protected abstract IMovementParameters Parameters { get; }
+
+        public Vector2 TargetVelocity { get { return _targetDirection * Parameters.Speed; } }
 
         private void Start()
         {
@@ -29,7 +30,7 @@ namespace MovementSystem
             {
                 if (_rigidbody.velocity != Vector2.zero)
                 {
-                    _rigidbody.velocity = Vector2.MoveTowards(_rigidbody.velocity, Vector2.zero, parameters.Deceleration * Time.fixedDeltaTime);
+                    _rigidbody.velocity = Vector2.MoveTowards(_rigidbody.velocity, Vector2.zero, Parameters.Deceleration * Time.fixedDeltaTime);
                 }
             }
             else
@@ -38,7 +39,7 @@ namespace MovementSystem
 
                 if (_rigidbody.velocity != TargetVelocity)
                 {
-                    _rigidbody.velocity = Vector2.MoveTowards(_rigidbody.velocity, TargetVelocity, parameters.Acceleration * Time.fixedDeltaTime);
+                    _rigidbody.velocity = Vector2.MoveTowards(_rigidbody.velocity, TargetVelocity, Parameters.Acceleration * Time.fixedDeltaTime);
                 }
             }
         }
