@@ -7,15 +7,13 @@ namespace OxygenConsumerSystem
 {
     public class OxygenConsumer : IOxygenConsumer
     {
-        private readonly float _inhalesInterval;
+        private readonly IOxygenConsumptionParameters _oxygenConsumptionParameters;
         private readonly IOxygenTank _oxygenTank;
         private readonly MonoBehaviour _monoBehaviour;
 
-        public OxygenConsumer(float inhalesInterval, IOxygenTank oxygenTank, MonoBehaviour monoBehaviour)
+        public OxygenConsumer(IOxygenConsumptionParameters oxygenConsumptionParameters, IOxygenTank oxygenTank, MonoBehaviour monoBehaviour)
         {
-            if (monoBehaviour == null) throw new ArgumentNullException(nameof(monoBehaviour));
-
-            _inhalesInterval = inhalesInterval;
+            _oxygenConsumptionParameters = oxygenConsumptionParameters ?? throw new ArgumentNullException(nameof(oxygenConsumptionParameters));
             _oxygenTank = oxygenTank ?? throw new ArgumentNullException(nameof(oxygenTank));
             _monoBehaviour = monoBehaviour != null ? monoBehaviour : throw new ArgumentNullException(nameof(monoBehaviour));
         }
@@ -37,9 +35,9 @@ namespace OxygenConsumerSystem
 
                 timer += Time.deltaTime;
 
-                if (timer >= _inhalesInterval)
+                if (timer >= _oxygenConsumptionParameters.InhalesInterval)
                 {
-                    timer -= _inhalesInterval;
+                    timer -= _oxygenConsumptionParameters.InhalesInterval;
 
                     if (_oxygenTank.OxygenAmount > 0)
                     {

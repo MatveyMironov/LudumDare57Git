@@ -6,7 +6,7 @@ namespace DeathSystem
 {
     public class MBDeathController : MonoBehaviour
     {
-        [SerializeField] private MBOxygenConsumer oxygenConsumer;
+        [SerializeField] private AMBOxygenConsumer oxygenConsumer;
         [SerializeField] private GameLossController gameLossController;
 
         private void Start()

@@ -224,6 +224,91 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!1 &4108402008304668789
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 896553224719248852}
+  - component: {fileID: 2863167439773748902}
+  - component: {fileID: 285622868219619149}
+  - component: {fileID: 7904383603640228847}
+  m_Layer: 6
+  m_Name: Oxygen
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &896553224719248852
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4108402008304668789}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1078178585686185051}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &2863167439773748902
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4108402008304668789}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 36a13dca91e07fe409da53f8c4c47509, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  configuration:
+    maxOxygenAmount: 60
+--- !u!114 &285622868219619149
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4108402008304668789}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6f5f18fcb4ba37e41b76d600f32d7e61, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  oxygenTank: {fileID: 2863167439773748902}
+  oxygenConsumptionParameters:
+    movementController: {fileID: 6174691598275013967}
+    speedUpController: {fileID: 5899607437543633301}
+    stillInhalesInterval: 1
+    movingInhalesInterval: 0.5
+    speedUpInhalesInterval: 0.05
+--- !u!114 &7904383603640228847
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4108402008304668789}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6874183a70e1af149864033917644080, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  oxygenConsumer: {fileID: 285622868219619149}
+  effectsAudioSource: {fileID: 3815391576751442284}
+  deathAudioClip: {fileID: 8300000, guid: 10a47f33cfb44444aaea0ce5bf7ba335, type: 3}
+  OnDeath:
+    m_PersistentCalls:
+      m_Calls: []
 --- !u!1 &4198568125580651127
 GameObject:
   m_ObjectHideFlags: 0
@@ -346,7 +431,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   interactionData: {fileID: 6491826416305921506}
   interactionAudioSource: {fileID: 3815391576751442284}
-  oxygenTank: {fileID: 9205506499656098346}
+  oxygenTank: {fileID: 2863167439773748902}
   decoyInventory: {fileID: 5179245864348602608}
 --- !u!1 &5174695581462152009
 GameObject:
@@ -454,9 +539,8 @@ Transform:
   - {fileID: 6931483088435895488}
   - {fileID: 187510219914467876}
   - {fileID: 7377345947339247330}
-  - {fileID: 6428271296171593572}
   - {fileID: 8382815671326889166}
-  - {fileID: 228607903812577965}
+  - {fileID: 896553224719248852}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: -90}
 --- !u!70 &6181554814281103330
@@ -618,52 +702,6 @@ MonoBehaviour:
   - 8
   - 16
   flashlightSwitchedOffVisibility: 4
---- !u!1 &5820520681330317263
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 6428271296171593572}
-  - component: {fileID: 9205506499656098346}
-  m_Layer: 6
-  m_Name: Oxygen Tank
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &6428271296171593572
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5820520681330317263}
-  serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 1078178585686185051}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &9205506499656098346
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5820520681330317263}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 36a13dca91e07fe409da53f8c4c47509, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  configuration:
-    maxOxygenAmount: 60
 --- !u!1 &5831329646232176654
 GameObject:
   m_ObjectHideFlags: 0
@@ -886,71 +924,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   baseMaxDecoys: 5
   startDecoys: 5
---- !u!1 &8605046164311988146
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 228607903812577965}
-  - component: {fileID: 3844925566050083874}
-  - component: {fileID: 1493167241180869961}
-  m_Layer: 6
-  m_Name: Oxygen Consumer
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &228607903812577965
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8605046164311988146}
-  serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 1078178585686185051}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &3844925566050083874
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8605046164311988146}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 278c7bd3c1a00b84594f887bfbaa9fc0, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  inhalesInterval: 1
-  oxygenTank: {fileID: 9205506499656098346}
---- !u!114 &1493167241180869961
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8605046164311988146}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 6874183a70e1af149864033917644080, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  oxygenConsumer: {fileID: 3844925566050083874}
-  effectsAudioSource: {fileID: 3815391576751442284}
-  deathAudioClip: {fileID: 8300000, guid: 10a47f33cfb44444aaea0ce5bf7ba335, type: 3}
-  OnDeath:
-    m_PersistentCalls:
-      m_Calls: []
 --- !u!1001 &4568172037041791347
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1119,10 +1092,14 @@ PrefabInstance:
     - target: {fileID: 8162727726439314400, guid: 656a17ad44846f245a52306dc3d616e0, type: 3}
       propertyPath: oxygenTank
       value: 
-      objectReference: {fileID: 9205506499656098346}
+      objectReference: {fileID: 2863167439773748902}
     - target: {fileID: 8315864715023871511, guid: 656a17ad44846f245a52306dc3d616e0, type: 3}
       propertyPath: m_Name
       value: Oxygen Tank Fill Displayer
+      objectReference: {fileID: 0}
+    - target: {fileID: 8315864715023871511, guid: 656a17ad44846f245a52306dc3d616e0, type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []

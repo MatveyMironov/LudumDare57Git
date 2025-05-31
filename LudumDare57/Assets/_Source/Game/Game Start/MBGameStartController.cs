@@ -14,7 +14,7 @@ namespace GameSystem.GameStart
         [SerializeField] private Transform startPoint;
         [SerializeField] private AMBClosableUI gameStartMenu;
         [SerializeField] private MBOxygenTank oxygenTank;
-        [SerializeField] private MBOxygenConsumer oxygenConsumer;
+        [SerializeField] private AMBOxygenConsumer oxygenConsumer;
         [SerializeField] private MBFlashlight flashlight;
         [SerializeField] private MBInputActionsManager inputActionsManager;
 

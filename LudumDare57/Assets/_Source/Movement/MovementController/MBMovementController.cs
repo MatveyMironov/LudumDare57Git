@@ -15,6 +15,8 @@ namespace MovementSystem
 
         private int _animatorSwimmingHash;
 
+        public Vector2 TargetVelocity { get { return _targetDirection * parameters.Speed; } }
+
         private void Start()
         {
             _rigidbody = GetComponent<Rigidbody2D>();
@@ -23,7 +25,7 @@ namespace MovementSystem
 
         private void FixedUpdate()
         {
-            if (_targetDirection == Vector2.zero)
+            if (TargetVelocity == Vector2.zero)
             {
                 if (_rigidbody.velocity != Vector2.zero)
                 {
@@ -34,9 +36,9 @@ namespace MovementSystem
             {
                 _rigidbody.rotation = Mathf.MoveTowardsAngle(_rigidbody.rotation, _targetAngle, 200.0f * Time.fixedDeltaTime);
 
-                if (_rigidbody.velocity != _targetDirection * parameters.Speed)
+                if (_rigidbody.velocity != TargetVelocity)
                 {
-                    _rigidbody.velocity = Vector2.MoveTowards(_rigidbody.velocity, _targetDirection * parameters.Speed, parameters.Acceleration * Time.fixedDeltaTime);
+                    _rigidbody.velocity = Vector2.MoveTowards(_rigidbody.velocity, TargetVelocity, parameters.Acceleration * Time.fixedDeltaTime);
                 }
             }
         }

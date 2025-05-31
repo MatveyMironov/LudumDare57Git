@@ -6,7 +6,7 @@ namespace PlayerSystem
 {
     public class MBPlayerSuffocation : MonoBehaviour
     {
-        [SerializeField] private MBOxygenConsumer oxygenConsumer;
+        [SerializeField] private AMBOxygenConsumer oxygenConsumer;
         [SerializeField] private AudioSource effectsAudioSource;
         [SerializeField] private AudioClip deathAudioClip;
 

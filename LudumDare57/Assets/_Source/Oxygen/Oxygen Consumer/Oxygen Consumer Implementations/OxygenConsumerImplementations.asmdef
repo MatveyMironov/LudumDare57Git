@@ -1,8 +1,11 @@
 {
-    "name": "OxygenConsumerSystem",
+    "name": "OxygenConsumerImplementations",
     "rootNamespace": "OxygenConsumerSystem",
     "references": [
-        "GUID:34ccc1e9c5abf0747920a93d87ca0f52"
+        "GUID:4818351e47740904e9e40089db662337",
+        "GUID:34ccc1e9c5abf0747920a93d87ca0f52",
+        "GUID:50fa4a53143855b46bb5aa8316d3141a",
+        "GUID:7e5176ea5a0e1e1429931183f396952e"
     ],
     "includePlatforms": [],
     "excludePlatforms": [],
