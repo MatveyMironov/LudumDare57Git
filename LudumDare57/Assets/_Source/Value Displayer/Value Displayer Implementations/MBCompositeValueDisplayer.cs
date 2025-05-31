@@ -2,7 +2,7 @@ using UnityEngine;
 
 namespace ValueDisplayerSystem
 {
-    public class MBCombinedValueDisplayer : AMBValueDisplayer
+    public class MBCompositeValueDisplayer : AMBValueDisplayer
     {
         [SerializeField] private AMBValueDisplayer[] valueDisplayers = new AMBValueDisplayer[0];
 

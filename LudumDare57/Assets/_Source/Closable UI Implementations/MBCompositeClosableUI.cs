@@ -2,7 +2,7 @@ using UnityEngine;
 
 namespace ClosableUISystem
 {
-    public class MBCombinedClosableUI : AMBClosableUI
+    public class MBCompositeClosableUI : AMBClosableUI
     {
         [SerializeField] private AMBClosableUI[] closableUIs = new AMBClosableUI[0];
 
