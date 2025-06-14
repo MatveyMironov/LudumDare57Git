@@ -231,7 +231,7 @@ Transform:
   m_GameObject: {fileID: 1057448455905926465}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: -10}
+  m_LocalPosition: {x: -2.27, y: -27.6, z: -10}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -270,9 +270,9 @@ Camera:
     height: 1
   near clip plane: 0.3
   far clip plane: 1000
-  field of view: 60
+  field of view: 34
   orthographic: 1
-  orthographic size: 5
+  orthographic size: 6
   m_Depth: -1
   m_CullingMask:
     serializedVersion: 2
@@ -790,7 +790,7 @@ Transform:
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1.5, y: 1.5, z: 1}
+  m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 4087027331759100008}
@@ -1360,19 +1360,19 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 3450875606597087926, guid: 0013cd1de085e3445a1aa4c2021bf8bd, type: 3}
       propertyPath: m_LocalBounds.m_Center.x
-      value: 0.022549868
+      value: 0.035400152
       objectReference: {fileID: 0}
     - target: {fileID: 3450875606597087926, guid: 0013cd1de085e3445a1aa4c2021bf8bd, type: 3}
       propertyPath: m_LocalBounds.m_Center.y
-      value: -0.058650017
+      value: -0.04674983
       objectReference: {fileID: 0}
     - target: {fileID: 3450875606597087926, guid: 0013cd1de085e3445a1aa4c2021bf8bd, type: 3}
       propertyPath: m_LocalBounds.m_Extent.x
-      value: 6.3053503
+      value: 6.3014
       objectReference: {fileID: 0}
     - target: {fileID: 3450875606597087926, guid: 0013cd1de085e3445a1aa4c2021bf8bd, type: 3}
       propertyPath: m_LocalBounds.m_Extent.y
-      value: 5.27505
+      value: 5.2796497
       objectReference: {fileID: 0}
     - target: {fileID: 6151254393337206725, guid: 0013cd1de085e3445a1aa4c2021bf8bd, type: 3}
       propertyPath: m_LocalPosition.x
