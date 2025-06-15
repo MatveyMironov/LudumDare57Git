@@ -27,8 +27,10 @@ namespace MovementSystem.Implementations.MB.Parameters
         private void FixedUpdate()
         {
             if (TargetVelocity == Vector2.zero)
+            {
                 if (_rigidbody.velocity != Vector2.zero)
                     _rigidbody.velocity = Vector2.MoveTowards(_rigidbody.velocity, Vector2.zero, Parameters.Deceleration * Time.fixedDeltaTime);
+            }
             else
             {
                 _rigidbody.rotation = Mathf.MoveTowardsAngle(_rigidbody.rotation, _targetAngle, 200.0f * Time.fixedDeltaTime);
