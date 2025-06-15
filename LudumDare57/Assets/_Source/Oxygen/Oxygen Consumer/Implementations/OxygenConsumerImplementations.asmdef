@@ -1,0 +1,17 @@
+{
+    "name": "OxygenConsumerImplementations",
+    "rootNamespace": "OxygenConsumerSystem.Implementations",
+    "references": [
+        "GUID:4818351e47740904e9e40089db662337",
+        "GUID:34ccc1e9c5abf0747920a93d87ca0f52"
+    ],
+    "includePlatforms": [],
+    "excludePlatforms": [],
+    "allowUnsafeCode": false,
+    "overrideReferences": false,
+    "precompiledReferences": [],
+    "autoReferenced": true,
+    "defineConstraints": [],
+    "versionDefines": [],
+    "noEngineReferences": false
+}

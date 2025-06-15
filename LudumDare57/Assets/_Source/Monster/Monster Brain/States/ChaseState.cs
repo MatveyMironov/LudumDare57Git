@@ -42,7 +42,7 @@ namespace MonsterBrainSystem
         {
             if (_perception.PercievedObjects.Count > 0)
             {
-                APercievedObject target = SelectChaseTarget();
+                AMBPercievedObject target = SelectChaseTarget();
 
                 if (target != null)
                     _movement.MoveToPosition(target.transform.position);
@@ -56,13 +56,13 @@ namespace MonsterBrainSystem
             return _movement.ReachedEndOfPath && _perception.PercievedObjects.Count == 0;
         }
 
-        private APercievedObject SelectChaseTarget()
+        private AMBPercievedObject SelectChaseTarget()
         {
             float lowestVisibility = 0;
 
-            APercievedObject target = null;
+            AMBPercievedObject target = null;
 
-            foreach (APercievedObject percievedObject in _perception.PercievedObjects)
+            foreach (AMBPercievedObject percievedObject in _perception.PercievedObjects)
             {
                 if (percievedObject != null)
                 {

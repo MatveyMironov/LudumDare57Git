@@ -1,11 +1,11 @@
-using SceneLoaderSystem;
+using SceneLoaderSystem.Implementations.MB;
 using UnityEngine;
 
 namespace SceneLoaderUISystem
 {
     public class MBSceneLoaderUIController : MonoBehaviour
     {
-        [SerializeField] private MBSceneLoader sceneLoader;
+        [SerializeField] private AMBSceneLoader sceneLoader;
         [SerializeField] private LoadingScreen loadingScreen;
 
         private void Start()

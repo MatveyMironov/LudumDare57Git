@@ -1,0 +1,13 @@
+using InteractionSystem.Data;
+
+namespace InteractionSystem
+{
+    public interface IInteractable
+    {
+        public void ShowInteraction();
+
+        public void HideInteraction();
+
+        public void Interact(IInteractionData interactionData);
+    }
+}

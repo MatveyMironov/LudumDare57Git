@@ -1,8 +1,8 @@
-﻿using ClosableUISystem;
-using FlashlightSystem;
-using InputActionsManagerSystem;
-using OxygenConsumerSystem;
-using OxygenTankSystem;
+﻿using ClosableUISystem.Implementations.MB;
+using FlashlightSystem.Implementations.MB;
+using InputActionsManagerSystem.Implementations.MB;
+using OxygenConsumerSystem.Implementations.MB;
+using OxygenTankSystem.Implementations.MB;
 using System;
 using UnityEngine;
 
@@ -13,10 +13,10 @@ namespace GameSystem.GameStart
         [SerializeField] private GameObject player;
         [SerializeField] private Transform startPoint;
         [SerializeField] private AMBClosableUI gameStartMenu;
-        [SerializeField] private MBOxygenTank oxygenTank;
+        [SerializeField] private AMBOxygenTank oxygenTank;
         [SerializeField] private AMBOxygenConsumer oxygenConsumer;
-        [SerializeField] private MBFlashlight flashlight;
-        [SerializeField] private MBInputActionsManager inputActionsManager;
+        [SerializeField] private AMBFlashlight flashlight;
+        [SerializeField] private AMBInputActionsManager inputActionsManager;
 
         [Space]
         [SerializeField] private GameStartConfiguration gameStartConfiguration;

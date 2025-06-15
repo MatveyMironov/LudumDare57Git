@@ -1,13 +1,13 @@
 using CoverSystem;
-using FlashlightSystem;
+using FlashlightSystem.Implementations.MB;
 using PerceptionSystem;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class PlayerPercievedObject : APercievedObject, ICoverable
+public class PlayerPercievedObject : AMBPercievedObject, ICoverable
 {
     [Space]
-    [SerializeField] private MBFlashlight flashlight;
+    [SerializeField] private AMBFlashlight flashlight;
     [SerializeField] private float[] flashlightConfigurationVisibilities = new float[0];
     [SerializeField] private float flashlightSwitchedOffVisibility;
 

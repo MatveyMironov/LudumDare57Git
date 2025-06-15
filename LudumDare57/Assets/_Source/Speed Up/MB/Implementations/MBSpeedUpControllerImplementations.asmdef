@@ -1,0 +1,16 @@
+{
+    "name": "MBSpeedUpControllerImplementations",
+    "rootNamespace": "SpeedUpSystem.Implementations.MB.Implementations",
+    "references": [
+        "GUID:7e5176ea5a0e1e1429931183f396952e"
+    ],
+    "includePlatforms": [],
+    "excludePlatforms": [],
+    "allowUnsafeCode": false,
+    "overrideReferences": false,
+    "precompiledReferences": [],
+    "autoReferenced": true,
+    "defineConstraints": [],
+    "versionDefines": [],
+    "noEngineReferences": false
+}

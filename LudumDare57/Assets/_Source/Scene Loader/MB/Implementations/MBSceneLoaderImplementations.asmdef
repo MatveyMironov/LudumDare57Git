@@ -1,0 +1,17 @@
+{
+    "name": "MBSceneLoader",
+    "rootNamespace": "SceneLoaderSystem.Implementations.MB.Implementations",
+    "references": [
+        "GUID:ff14f676cc843d047b9703971c94e029",
+        "GUID:c561a8078350f21459756353db4c41ef"
+    ],
+    "includePlatforms": [],
+    "excludePlatforms": [],
+    "allowUnsafeCode": false,
+    "overrideReferences": false,
+    "precompiledReferences": [],
+    "autoReferenced": true,
+    "defineConstraints": [],
+    "versionDefines": [],
+    "noEngineReferences": false
+}

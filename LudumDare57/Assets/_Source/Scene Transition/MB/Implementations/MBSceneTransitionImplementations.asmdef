@@ -1,0 +1,19 @@
+{
+    "name": "MBSceneTransitionImplementations",
+    "rootNamespace": "SceneTransitionSystem.Implementations.MB.Implementations",
+    "references": [
+        "GUID:811184772365a2d409acf0360d622f77",
+        "GUID:bf12a2e40ce9dca48bfd991db9f0c944",
+        "GUID:95f0371bc48a41046881ca14489061ca",
+        "GUID:ff14f676cc843d047b9703971c94e029"
+    ],
+    "includePlatforms": [],
+    "excludePlatforms": [],
+    "allowUnsafeCode": false,
+    "overrideReferences": false,
+    "precompiledReferences": [],
+    "autoReferenced": true,
+    "defineConstraints": [],
+    "versionDefines": [],
+    "noEngineReferences": false
+}

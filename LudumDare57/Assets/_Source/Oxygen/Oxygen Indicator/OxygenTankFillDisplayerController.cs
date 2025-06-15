@@ -2,17 +2,17 @@ using FillDisplayerSystem;
 using OxygenTankSystem;
 using System;
 
-namespace OxygenTankUISystem
+namespace OxygenTankFillDisplayerControllerSystem
 {
     public class OxygenTankFillDisplayerController
     {
-        private readonly AMBFillDisplayer _oxygenTankFillDisplayer;
+        private readonly IFillDisplayer _oxygenTankFillDisplayer;
 
         private IOxygenTank _displayedOxygenTank;
 
-        public OxygenTankFillDisplayerController(AMBFillDisplayer oxygenTankFillDisplayer)
+        public OxygenTankFillDisplayerController(IFillDisplayer oxygenTankFillDisplayer)
         {
-            _oxygenTankFillDisplayer = oxygenTankFillDisplayer != null ? oxygenTankFillDisplayer : throw new ArgumentNullException(nameof(oxygenTankFillDisplayer));
+            _oxygenTankFillDisplayer = oxygenTankFillDisplayer ?? throw new ArgumentNullException(nameof(oxygenTankFillDisplayer));
         }
 
         public void DisplayOxygenTank(IOxygenTank oxygenTank)

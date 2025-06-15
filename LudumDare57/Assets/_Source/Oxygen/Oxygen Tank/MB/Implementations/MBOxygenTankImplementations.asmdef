@@ -1,0 +1,17 @@
+{
+    "name": "MBOxygenTankImplementations",
+    "rootNamespace": "OxygenTankSystem.Implementations.MB.Implementations",
+    "references": [
+        "GUID:34ccc1e9c5abf0747920a93d87ca0f52",
+        "GUID:0ca5f973ff829654abb4ab897472348a"
+    ],
+    "includePlatforms": [],
+    "excludePlatforms": [],
+    "allowUnsafeCode": false,
+    "overrideReferences": false,
+    "precompiledReferences": [],
+    "autoReferenced": true,
+    "defineConstraints": [],
+    "versionDefines": [],
+    "noEngineReferences": false
+}

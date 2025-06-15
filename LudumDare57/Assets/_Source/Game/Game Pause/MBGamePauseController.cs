@@ -1,5 +1,5 @@
-using ClosableUISystem;
-using InputActionsManagerSystem;
+using ClosableUISystem.Implementations.MB;
+using InputActionsManagerSystem.Implementations.MB;
 using System;
 using UnityEngine;
 
@@ -8,7 +8,7 @@ namespace GameSystem.Pause
     public class MBGamePauseController : MonoBehaviour, IGamePauseController
     {
         [SerializeField] private AMBClosableUI gamePauseMenu;
-        [SerializeField] private MBInputActionsManager inputActionsManager;
+        [SerializeField] private AMBInputActionsManager inputActionsManager;
 
         private GamePauseController _gamePauseController;
 

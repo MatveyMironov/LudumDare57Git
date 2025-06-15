@@ -1,6 +1,6 @@
-using FillDisplayerSystem;
-using ClosableUISystem;
 using UnityEngine;
+using ClosableUISystem.Implementations.MB;
+using FillDisplayerSystem.Implementations.MB;
 
 namespace SceneLoaderUISystem
 {

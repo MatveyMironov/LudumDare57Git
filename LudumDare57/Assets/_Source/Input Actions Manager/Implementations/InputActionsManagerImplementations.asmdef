@@ -1,0 +1,17 @@
+{
+    "name": "InputActionsManagerImplementations",
+    "rootNamespace": "InputActionsManagerSystem.Implementations",
+    "references": [
+        "GUID:4626180b538ba494197d744e5b252bab",
+        "GUID:95f0371bc48a41046881ca14489061ca"
+    ],
+    "includePlatforms": [],
+    "excludePlatforms": [],
+    "allowUnsafeCode": false,
+    "overrideReferences": false,
+    "precompiledReferences": [],
+    "autoReferenced": true,
+    "defineConstraints": [],
+    "versionDefines": [],
+    "noEngineReferences": false
+}

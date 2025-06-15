@@ -1,4 +1,4 @@
-namespace InteractionSystem
+namespace InteractionSystem.Data
 {
     public interface IInteractionData
     {

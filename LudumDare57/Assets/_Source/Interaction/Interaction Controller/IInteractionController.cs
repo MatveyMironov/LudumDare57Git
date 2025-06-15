@@ -1,4 +1,4 @@
-﻿namespace InteractionSystem
+﻿namespace InteractionSystem.Controller
 {
     public interface IInteractionController
     {

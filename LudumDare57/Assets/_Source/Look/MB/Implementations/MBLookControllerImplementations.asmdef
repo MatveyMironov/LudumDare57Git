@@ -1,0 +1,16 @@
+{
+    "name": "MBLookControllerImplementations",
+    "rootNamespace": "LookSystem.Implementations.MB.Implementations",
+    "references": [
+        "GUID:e21486d768a9f144a886b06e97274ac0"
+    ],
+    "includePlatforms": [],
+    "excludePlatforms": [],
+    "allowUnsafeCode": false,
+    "overrideReferences": false,
+    "precompiledReferences": [],
+    "autoReferenced": true,
+    "defineConstraints": [],
+    "versionDefines": [],
+    "noEngineReferences": false
+}

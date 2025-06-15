@@ -1,0 +1,19 @@
+{
+    "name": "MBInteractionControllerImplementations",
+    "rootNamespace": "InteractionSystem.Controller.Implementations.MB.Implementations",
+    "references": [
+        "GUID:844fe1bc80f958a43a55b6974eb2b416",
+        "GUID:bfcec90cb6b9afc43a06182bc089b737",
+        "GUID:40a0b2777fe1f384b92efa13cf0b29fc",
+        "GUID:f9a1cc6b2a298e741b12c65f62e260c6"
+    ],
+    "includePlatforms": [],
+    "excludePlatforms": [],
+    "allowUnsafeCode": false,
+    "overrideReferences": false,
+    "precompiledReferences": [],
+    "autoReferenced": true,
+    "defineConstraints": [],
+    "versionDefines": [],
+    "noEngineReferences": false
+}

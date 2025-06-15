@@ -1,7 +1,8 @@
 using DecoyUserSystem;
 using FlashlightSystem;
 using GameSystem.Pause;
-using InteractionSystem;
+using InteractionSystem.Controller;
+using LookSystem;
 using MovementSystem;
 using SpeedUpSystem;
 using System;

@@ -1,5 +1,5 @@
 using GameSystem.GameLoss;
-using OxygenConsumerSystem;
+using OxygenConsumerSystem.Implementations.MB;
 using UnityEngine;
 
 namespace DeathSystem

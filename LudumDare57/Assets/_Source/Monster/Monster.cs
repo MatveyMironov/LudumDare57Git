@@ -4,8 +4,8 @@ using PerceptionSystem;
 using UnityEngine;
 using MonsterPerseptionSystem;
 using WeaponSystem;
-using FillDisplayerSystem;
-using EffectsPlayerSystem;
+using EffectsPlayerSystem.Implementations;
+using FillDisplayerSystem.Implementations.MB;
 
 namespace MonsterSystem
 {
@@ -47,12 +47,12 @@ namespace MonsterSystem
         }
 
         #region Perciever
-        public void StartPercieving(APercievedObject percievedObject)
+        public void StartPercieving(AMBPercievedObject percievedObject)
         {
             _perception.PercievedObjects.Add(percievedObject);
         }
 
-        public void StopPercieving(APercievedObject percievedObject)
+        public void StopPercieving(AMBPercievedObject percievedObject)
         {
             _perception.PercievedObjects.Remove(percievedObject);
         }

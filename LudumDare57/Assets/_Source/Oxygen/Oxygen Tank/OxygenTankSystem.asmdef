@@ -1,9 +1,7 @@
 {
     "name": "OxygenTankSystem",
     "rootNamespace": "OxygenTankSystem",
-    "references": [
-        "GUID:222c5386a7159a0419df8294d84e3e35"
-    ],
+    "references": [],
     "includePlatforms": [],
     "excludePlatforms": [],
     "allowUnsafeCode": false,

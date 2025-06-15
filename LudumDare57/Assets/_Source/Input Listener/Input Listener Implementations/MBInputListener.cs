@@ -1,10 +1,11 @@
-using DecoyUserSystem;
-using FlashlightSystem;
+using DecoyUserSystem.Implementations.MB;
+using FlashlightSystem.Implementations.MB;
 using GameSystem.Pause;
-using InteractionSystem;
-using MovementSystem;
+using InteractionSystem.Controller.Implementations.MB;
+using LookSystem.Implementations.MB;
+using MovementSystem.Implementations.MB;
 using PlayerControlsProviderSystem;
-using SpeedUpSystem;
+using SpeedUpSystem.Implementations.MB;
 using UnityEngine;
 
 namespace InputActionsManagerSystem
@@ -12,12 +13,12 @@ namespace InputActionsManagerSystem
     public class MBInputListener : MonoBehaviour
     {
         [SerializeField] private AMBMovementController movementController;
-        [SerializeField] private MBSpeedUpController speedUpController;
-        [SerializeField] private MBLookController lookController;
-        [SerializeField] private MBInteractionController interactionController;
-        [SerializeField] private MBFlashlight flashlight;
+        [SerializeField] private AMBSpeedUpController speedUpController;
+        [SerializeField] private AMBLookController lookController;
+        [SerializeField] private AMBInteractionController interactionController;
+        [SerializeField] private AMBFlashlight flashlight;
         [SerializeField] private MBGamePauseController gamePauseController;
-        [SerializeField] private MBDecoySpawnerUser decoyUser;
+        [SerializeField] private AMBDecoyUser decoyUser;
         
         [Space]
         [SerializeField] private MBPlayerControlsProvider playerControlsProvider;

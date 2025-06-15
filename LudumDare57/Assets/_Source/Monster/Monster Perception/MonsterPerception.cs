@@ -5,6 +5,6 @@ namespace MonsterPerseptionSystem
 {
     public class MonsterPerception
     {
-        public HashSet<APercievedObject> PercievedObjects { get; } = new();
+        public HashSet<AMBPercievedObject> PercievedObjects { get; } = new();
     }
 }

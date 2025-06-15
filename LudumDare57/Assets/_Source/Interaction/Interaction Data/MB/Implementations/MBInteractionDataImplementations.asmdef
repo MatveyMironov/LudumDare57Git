@@ -1,0 +1,17 @@
+{
+    "name": "MBInteractionDataImplementations",
+    "rootNamespace": "InteractionSystem.Data.Implementations.MB.Implementations",
+    "references": [
+        "GUID:f9a1cc6b2a298e741b12c65f62e260c6",
+        "GUID:02f998a517b20f14f84fa7da3aee9166"
+    ],
+    "includePlatforms": [],
+    "excludePlatforms": [],
+    "allowUnsafeCode": false,
+    "overrideReferences": false,
+    "precompiledReferences": [],
+    "autoReferenced": true,
+    "defineConstraints": [],
+    "versionDefines": [],
+    "noEngineReferences": false
+}

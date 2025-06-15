@@ -1,0 +1,19 @@
+{
+    "name": "MBInputActionsManagerImplementations",
+    "rootNamespace": "InputActionsManagerSystem.Implementations.MB.Implementations",
+    "references": [
+        "GUID:95f0371bc48a41046881ca14489061ca",
+        "GUID:4c7ce04502478934fb2379b9fcd636d2",
+        "GUID:5434ae38401fdc543a6332da024ddd6a",
+        "GUID:4626180b538ba494197d744e5b252bab"
+    ],
+    "includePlatforms": [],
+    "excludePlatforms": [],
+    "allowUnsafeCode": false,
+    "overrideReferences": false,
+    "precompiledReferences": [],
+    "autoReferenced": true,
+    "defineConstraints": [],
+    "versionDefines": [],
+    "noEngineReferences": false
+}

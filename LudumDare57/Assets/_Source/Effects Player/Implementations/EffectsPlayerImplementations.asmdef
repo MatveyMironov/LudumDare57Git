@@ -1,0 +1,16 @@
+{
+    "name": "EffectsPlayerImplementations",
+    "rootNamespace": "EffectsPlayerSystem.Implementations",
+    "references": [
+        "GUID:5476fe41e13f62a4098d9599ce7d33a3"
+    ],
+    "includePlatforms": [],
+    "excludePlatforms": [],
+    "allowUnsafeCode": false,
+    "overrideReferences": false,
+    "precompiledReferences": [],
+    "autoReferenced": true,
+    "defineConstraints": [],
+    "versionDefines": [],
+    "noEngineReferences": false
+}

@@ -1,4 +1,4 @@
-using OxygenConsumerSystem;
+using OxygenConsumerSystem.Implementations.MB;
 using UnityEngine;
 using UnityEngine.Events;
 

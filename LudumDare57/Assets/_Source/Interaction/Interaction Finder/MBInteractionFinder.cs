@@ -2,7 +2,7 @@ using System;
 using System.Collections.Generic;
 using UnityEngine;
 
-namespace InteractionSystem
+namespace InteractionSystem.InteractionFinder
 {
     public class MBInteractionFinder : MonoBehaviour
     {
@@ -17,12 +17,8 @@ namespace InteractionSystem
 
             Collider2D[] colliders = Physics2D.OverlapCircleAll(transform.position, interactionRadius, interactableLayers);
             foreach (Collider2D collider in colliders)
-            {
                 if (collider.TryGetComponent(out IInteractable interactable))
-                {
                     interactables.Add(interactable);
-                }
-            }
 
             OnInteractablesUpdated?.Invoke(interactables);
         }

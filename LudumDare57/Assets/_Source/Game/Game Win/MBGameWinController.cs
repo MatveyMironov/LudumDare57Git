@@ -1,5 +1,5 @@
-﻿using ClosableUISystem;
-using InputActionsManagerSystem;
+﻿using ClosableUISystem.Implementations.MB;
+using InputActionsManagerSystem.Implementations.MB;
 using System;
 using UnityEngine;
 
@@ -8,7 +8,7 @@ namespace GameSystem.GameWin
     public class MBGameWinController : MonoBehaviour, IGameWinController
     {
         [SerializeField] private AMBClosableUI gameWinMenu;
-        [SerializeField] private MBInputActionsManager inputActionsManager;
+        [SerializeField] private AMBInputActionsManager inputActionsManager;
 
         private GameWinController _gameWinController;
 

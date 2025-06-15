@@ -1,6 +1,8 @@
 using DecoyInventorySystem;
-using InteractionSystem;
+using DecoyInventorySystem.Implementations.MB;
+using InteractionSystem.Data.Implementations.MB.Implementations;
 using OxygenTankSystem;
+using OxygenTankSystem.Implementations.MB;
 using UnityEngine;
 
 public class MBInteractionDataServiceAdder : MonoBehaviour
@@ -9,8 +11,8 @@ public class MBInteractionDataServiceAdder : MonoBehaviour
 
     [Header("Interaction Services")]
     [SerializeField] private AudioSource interactionAudioSource;
-    [SerializeField] private MBOxygenTank oxygenTank;
-    [SerializeField] private MBDecoyInventory decoyInventory;
+    [SerializeField] private AMBOxygenTank oxygenTank;
+    [SerializeField] private AMBDecoyInventory decoyInventory;
 
     private void Start()
     {

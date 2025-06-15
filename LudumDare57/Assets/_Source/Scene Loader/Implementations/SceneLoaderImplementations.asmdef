@@ -1,0 +1,16 @@
+{
+    "name": "SceneLoaderImplementations",
+    "rootNamespace": "SceneLoaderSystem.Implementations",
+    "references": [
+        "GUID:ff14f676cc843d047b9703971c94e029"
+    ],
+    "includePlatforms": [],
+    "excludePlatforms": [],
+    "allowUnsafeCode": false,
+    "overrideReferences": false,
+    "precompiledReferences": [],
+    "autoReferenced": true,
+    "defineConstraints": [],
+    "versionDefines": [],
+    "noEngineReferences": false
+}

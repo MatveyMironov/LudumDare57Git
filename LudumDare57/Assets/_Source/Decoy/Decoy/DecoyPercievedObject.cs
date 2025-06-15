@@ -3,7 +3,7 @@ using UnityEngine;
 
 namespace DecoySystem
 {
-    internal class DecoyPercievedObject : APercievedObject
+    internal class DecoyPercievedObject : AMBPercievedObject
     {
         [SerializeField] private float engagedVisibilityDistance;
 
