@@ -5,7 +5,7 @@ namespace InputActionsManagerSystem.Implementations.MB.Implementations
 {
     public class MBInputActionsManager : AMBInputActionsManager
     {
-        [SerializeField] private MBPlayerControlsProvider playerControlsProvider;
+        [SerializeField] private AMBPlayerControlsProvider playerControlsProvider;
 
         private InputActionsManager _inputActionsManager;
 

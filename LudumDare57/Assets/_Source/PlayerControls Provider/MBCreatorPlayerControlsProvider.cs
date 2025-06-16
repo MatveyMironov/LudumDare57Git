@@ -1,12 +1,10 @@
-using UnityEngine;
-
 namespace PlayerControlsProviderSystem
 {
-    public class MBPlayerControlsProvider : MonoBehaviour
+    internal class MBCreatorPlayerControlsProvider : AMBPlayerControlsProvider
     {
         private PlayerControls _playerControls;
 
-        public PlayerControls PlayerControls
+        public override PlayerControls PlayerControls
         {
             get
             {

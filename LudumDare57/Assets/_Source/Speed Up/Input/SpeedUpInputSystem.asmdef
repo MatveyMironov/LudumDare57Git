@@ -1,0 +1,19 @@
+{
+    "name": "SpeedUpInputSystem",
+    "rootNamespace": "SpeedUpSystem.Input",
+    "references": [
+        "GUID:75469ad4d38634e559750d17036d5f7c",
+        "GUID:4626180b538ba494197d744e5b252bab",
+        "GUID:7e5176ea5a0e1e1429931183f396952e",
+        "GUID:5434ae38401fdc543a6332da024ddd6a"
+    ],
+    "includePlatforms": [],
+    "excludePlatforms": [],
+    "allowUnsafeCode": false,
+    "overrideReferences": false,
+    "precompiledReferences": [],
+    "autoReferenced": true,
+    "defineConstraints": [],
+    "versionDefines": [],
+    "noEngineReferences": false
+}

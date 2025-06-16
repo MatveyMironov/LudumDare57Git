@@ -1,0 +1,19 @@
+{
+    "name": "PauseInputSystem",
+    "rootNamespace": "GameSystem.Pause.Input",
+    "references": [
+        "GUID:75469ad4d38634e559750d17036d5f7c",
+        "GUID:4626180b538ba494197d744e5b252bab",
+        "GUID:033e4f620c3c60a41906bae17cd25b3c",
+        "GUID:5434ae38401fdc543a6332da024ddd6a"
+    ],
+    "includePlatforms": [],
+    "excludePlatforms": [],
+    "allowUnsafeCode": false,
+    "overrideReferences": false,
+    "precompiledReferences": [],
+    "autoReferenced": true,
+    "defineConstraints": [],
+    "versionDefines": [],
+    "noEngineReferences": false
+}

@@ -1,0 +1,19 @@
+{
+    "name": "MovementInputSystem",
+    "rootNamespace": "MovementSystem.Input",
+    "references": [
+        "GUID:75469ad4d38634e559750d17036d5f7c",
+        "GUID:4626180b538ba494197d744e5b252bab",
+        "GUID:50fa4a53143855b46bb5aa8316d3141a",
+        "GUID:5434ae38401fdc543a6332da024ddd6a"
+    ],
+    "includePlatforms": [],
+    "excludePlatforms": [],
+    "allowUnsafeCode": false,
+    "overrideReferences": false,
+    "precompiledReferences": [],
+    "autoReferenced": true,
+    "defineConstraints": [],
+    "versionDefines": [],
+    "noEngineReferences": false
+}
