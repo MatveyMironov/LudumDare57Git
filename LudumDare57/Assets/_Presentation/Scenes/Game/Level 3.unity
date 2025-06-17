@@ -7476,6 +7476,17 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 6e615e98186522f4e8ae28a438c5aced, type: 3}
+--- !u!114 &1169597343 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 1064191428467624713, guid: f4ece168ad6e1364e9b4fc26b4f291dd, type: 3}
+  m_PrefabInstance: {fileID: 1247755161}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8c831ac2c0b145948af7fa0758544353, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &1169841647
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -8214,19 +8225,19 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4019871671400586312, guid: f4ece168ad6e1364e9b4fc26b4f291dd, type: 3}
       propertyPath: m_LocalBounds.m_Center.x
-      value: 0.03544998
+      value: 0.033600092
       objectReference: {fileID: 0}
     - target: {fileID: 4019871671400586312, guid: f4ece168ad6e1364e9b4fc26b4f291dd, type: 3}
       propertyPath: m_LocalBounds.m_Center.y
-      value: -0.059899807
+      value: -0.05940008
       objectReference: {fileID: 0}
     - target: {fileID: 4019871671400586312, guid: f4ece168ad6e1364e9b4fc26b4f291dd, type: 3}
       propertyPath: m_LocalBounds.m_Extent.x
-      value: 6.31025
+      value: 6.3058996
       objectReference: {fileID: 0}
     - target: {fileID: 4019871671400586312, guid: f4ece168ad6e1364e9b4fc26b4f291dd, type: 3}
       propertyPath: m_LocalBounds.m_Extent.y
-      value: 5.2753
+      value: 5.2801
       objectReference: {fileID: 0}
     - target: {fileID: 4258154781563418558, guid: f4ece168ad6e1364e9b4fc26b4f291dd, type: 3}
       propertyPath: m_AnchorMax.y
@@ -8308,6 +8319,10 @@ PrefabInstance:
       propertyPath: m_SizeDelta.y
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 7015088433590101391, guid: f4ece168ad6e1364e9b4fc26b4f291dd, type: 3}
+      propertyPath: OnAllObjectsCollected.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 1169597343}
     - target: {fileID: 7209345390953232823, guid: f4ece168ad6e1364e9b4fc26b4f291dd, type: 3}
       propertyPath: m_SizeDelta.x
       value: 0

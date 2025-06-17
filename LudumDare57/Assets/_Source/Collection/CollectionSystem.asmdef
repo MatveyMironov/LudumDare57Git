@@ -1,0 +1,17 @@
+{
+    "name": "CollectionSystem",
+    "rootNamespace": "CollectionSystem",
+    "references": [
+        "GUID:f9a1cc6b2a298e741b12c65f62e260c6",
+        "GUID:9babfd34f78b00e4a80bc21e0235e5f3"
+    ],
+    "includePlatforms": [],
+    "excludePlatforms": [],
+    "allowUnsafeCode": false,
+    "overrideReferences": false,
+    "precompiledReferences": [],
+    "autoReferenced": true,
+    "defineConstraints": [],
+    "versionDefines": [],
+    "noEngineReferences": false
+}
