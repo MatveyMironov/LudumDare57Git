@@ -1,5 +1,6 @@
 ﻿using ClosableUISystem.Implementations.MB;
 using InputActionsManagerSystem.Implementations.MB;
+using LevelSaveSystem;
 using System;
 using UnityEngine;
 
@@ -9,6 +10,7 @@ namespace GameSystem.GameWin
     {
         [SerializeField] private AMBClosableUI gameWinMenu;
         [SerializeField] private AMBInputActionsManager inputActionsManager;
+        [SerializeField] private LevelSaver levelSaver;
 
         private GameWinController _gameWinController;
 
@@ -16,7 +18,7 @@ namespace GameSystem.GameWin
         {
             get
             {
-                _gameWinController ??= new(gameWinMenu, inputActionsManager);
+                _gameWinController ??= new(gameWinMenu, inputActionsManager, levelSaver);
 
                 return _gameWinController;
             }

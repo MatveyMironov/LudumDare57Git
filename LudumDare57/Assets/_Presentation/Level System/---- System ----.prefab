@@ -32,8 +32,55 @@ Transform:
   - {fileID: 3402517956743595736}
   - {fileID: 5360956569832374324}
   - {fileID: 8099678292893977733}
+  - {fileID: 8976953044473484736}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &5806129861688218197
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 8976953044473484736}
+  - component: {fileID: 2975169040975046524}
+  m_Layer: 0
+  m_Name: Level Saver
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &8976953044473484736
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5806129861688218197}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 7218305212398630628}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &2975169040975046524
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5806129861688218197}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e6b7a2d60bb117d4ba81d5e2a6652d4d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  savableLevelsList: {fileID: 11400000, guid: 96f56dae144b2704b90308e52d0b2994, type: 2}
+  savedLevelName: 
 --- !u!1 &7536369522279110135
 GameObject:
   m_ObjectHideFlags: 0
@@ -142,6 +189,10 @@ PrefabInstance:
       propertyPath: inputActionsManager
       value: 
       objectReference: {fileID: 3486286029381986782}
+    - target: {fileID: 8359158239356756459, guid: 621149f69dd4dfe4ca745f8172a9b438, type: 3}
+      propertyPath: levelSaver
+      value: 
+      objectReference: {fileID: 2975169040975046524}
     - target: {fileID: 8359158239356756459, guid: 621149f69dd4dfe4ca745f8172a9b438, type: 3}
       propertyPath: inputActionsManager
       value: 

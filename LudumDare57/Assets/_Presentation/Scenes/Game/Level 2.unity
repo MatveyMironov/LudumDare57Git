@@ -3573,6 +3573,10 @@ PrefabInstance:
       propertyPath: m_AnchoredPosition.y
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 1781586154369454539, guid: f4ece168ad6e1364e9b4fc26b4f291dd, type: 3}
+      propertyPath: savedLevelName
+      value: Level 3
+      objectReference: {fileID: 0}
     - target: {fileID: 2305615366663839972, guid: f4ece168ad6e1364e9b4fc26b4f291dd, type: 3}
       propertyPath: m_AnchorMax.y
       value: 0
@@ -3620,6 +3624,14 @@ PrefabInstance:
     - target: {fileID: 3541224426254285914, guid: f4ece168ad6e1364e9b4fc26b4f291dd, type: 3}
       propertyPath: m_LocalScale.y
       value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 3746024216950387863, guid: f4ece168ad6e1364e9b4fc26b4f291dd, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -2.27
+      objectReference: {fileID: 0}
+    - target: {fileID: 3746024216950387863, guid: f4ece168ad6e1364e9b4fc26b4f291dd, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -27.6
       objectReference: {fileID: 0}
     - target: {fileID: 3769978191533155756, guid: f4ece168ad6e1364e9b4fc26b4f291dd, type: 3}
       propertyPath: m_AnchorMax.y
@@ -3705,14 +3717,6 @@ PrefabInstance:
       propertyPath: m_SizeDelta.y
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 5610903353206379306, guid: f4ece168ad6e1364e9b4fc26b4f291dd, type: 3}
-      propertyPath: percievedObject
-      value: 
-      objectReference: {fileID: 0}
-    - target: {fileID: 6587283445299018936, guid: f4ece168ad6e1364e9b4fc26b4f291dd, type: 3}
-      propertyPath: inventory
-      value: 
-      objectReference: {fileID: 0}
     - target: {fileID: 7209345390953232823, guid: f4ece168ad6e1364e9b4fc26b4f291dd, type: 3}
       propertyPath: m_SizeDelta.x
       value: 0
@@ -3741,10 +3745,6 @@ PrefabInstance:
       propertyPath: m_IsActive
       value: 1
       objectReference: {fileID: 0}
-    - target: {fileID: 8637480860937990753, guid: f4ece168ad6e1364e9b4fc26b4f291dd, type: 3}
-      propertyPath: oxygenTank
-      value: 
-      objectReference: {fileID: 0}
     - target: {fileID: 8805220943055611754, guid: f4ece168ad6e1364e9b4fc26b4f291dd, type: 3}
       propertyPath: m_AnchorMax.y
       value: 0
@@ -3776,26 +3776,6 @@ PrefabInstance:
     - target: {fileID: 8907553724049895329, guid: f4ece168ad6e1364e9b4fc26b4f291dd, type: 3}
       propertyPath: m_AnchoredPosition.y
       value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 9044501802675285405, guid: f4ece168ad6e1364e9b4fc26b4f291dd, type: 3}
-      propertyPath: player
-      value: 
-      objectReference: {fileID: 0}
-    - target: {fileID: 9044501802675285405, guid: f4ece168ad6e1364e9b4fc26b4f291dd, type: 3}
-      propertyPath: flashlight
-      value: 
-      objectReference: {fileID: 0}
-    - target: {fileID: 9044501802675285405, guid: f4ece168ad6e1364e9b4fc26b4f291dd, type: 3}
-      propertyPath: oxygenTank
-      value: 
-      objectReference: {fileID: 0}
-    - target: {fileID: 9044501802675285405, guid: f4ece168ad6e1364e9b4fc26b4f291dd, type: 3}
-      propertyPath: startPoint
-      value: 
-      objectReference: {fileID: 0}
-    - target: {fileID: 9044501802675285405, guid: f4ece168ad6e1364e9b4fc26b4f291dd, type: 3}
-      propertyPath: oxygenConsumer
-      value: 
       objectReference: {fileID: 0}
     - target: {fileID: 9133442586912116692, guid: f4ece168ad6e1364e9b4fc26b4f291dd, type: 3}
       propertyPath: m_AnchorMax.x

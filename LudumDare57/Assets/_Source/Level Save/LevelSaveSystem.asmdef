@@ -1,0 +1,16 @@
+{
+    "name": "LevelSaveSystem",
+    "rootNamespace": "LevelSaveSystem",
+    "references": [
+        "GUID:546176b22079f104588396c8fbad3b27"
+    ],
+    "includePlatforms": [],
+    "excludePlatforms": [],
+    "allowUnsafeCode": false,
+    "overrideReferences": false,
+    "precompiledReferences": [],
+    "autoReferenced": true,
+    "defineConstraints": [],
+    "versionDefines": [],
+    "noEngineReferences": false
+}
