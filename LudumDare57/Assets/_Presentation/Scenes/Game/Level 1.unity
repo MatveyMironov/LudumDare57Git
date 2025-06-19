@@ -375,6 +375,14 @@ PrefabInstance:
       propertyPath: m_SizeDelta.y
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 6542681579456239285, guid: f4ece168ad6e1364e9b4fc26b4f291dd, type: 3}
+      propertyPath: fullFlickeringPeriod
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6542681579456239285, guid: f4ece168ad6e1364e9b4fc26b4f291dd, type: 3}
+      propertyPath: emptyFlickeringPeriod
+      value: 0.25
+      objectReference: {fileID: 0}
     - target: {fileID: 7209345390953232823, guid: f4ece168ad6e1364e9b4fc26b4f291dd, type: 3}
       propertyPath: m_SizeDelta.x
       value: 0

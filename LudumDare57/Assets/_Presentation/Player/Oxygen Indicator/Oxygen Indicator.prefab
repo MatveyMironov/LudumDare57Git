@@ -10,9 +10,9 @@ GameObject:
   m_Component:
   - component: {fileID: 7818074618682255003}
   - component: {fileID: 3557012876342628447}
-  - component: {fileID: 6971697137951366578}
+  - component: {fileID: 6841850450099059814}
   m_Layer: 6
-  m_Name: Oxygen Light2D Color Gradient Fill Displayer
+  m_Name: Oxygen Flicker GameObject Fill Displayer
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -83,7 +83,7 @@ MonoBehaviour:
   - {x: 0.5, y: -0.5, z: 0}
   - {x: 0.5, y: 0.5, z: 0}
   - {x: -0.5, y: 0.5, z: 0}
---- !u!114 &6971697137951366578
+--- !u!114 &6841850450099059814
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -92,40 +92,11 @@ MonoBehaviour:
   m_GameObject: {fileID: 31146972022353803}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 2b91822f603607e47a459210935ba761, type: 3}
+  m_Script: {fileID: 11500000, guid: e95258cb96a85dc418107d25b09706fc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  colorGradient:
-    serializedVersion: 2
-    key0: {r: 1, g: 0.25490198, b: 0, a: 1}
-    key1: {r: 0, g: 1, b: 0.74509805, a: 1}
-    key2: {r: 0, g: 0, b: 0, a: 0}
-    key3: {r: 0, g: 0, b: 0, a: 0}
-    key4: {r: 0, g: 0, b: 0, a: 0}
-    key5: {r: 0, g: 0, b: 0, a: 0}
-    key6: {r: 0, g: 0, b: 0, a: 0}
-    key7: {r: 0, g: 0, b: 0, a: 0}
-    ctime0: 0
-    ctime1: 65535
-    ctime2: 0
-    ctime3: 0
-    ctime4: 0
-    ctime5: 0
-    ctime6: 0
-    ctime7: 0
-    atime0: 0
-    atime1: 65535
-    atime2: 0
-    atime3: 0
-    atime4: 0
-    atime5: 0
-    atime6: 0
-    atime7: 0
-    m_Mode: 0
-    m_ColorSpace: -1
-    m_NumColorKeys: 2
-    m_NumAlphaKeys: 2
-  light2D: {fileID: 3557012876342628447}
+  emptyFlickeringPeriod: 0
+  fullFlickeringPeriod: 0
 --- !u!1 &338094148973501843
 GameObject:
   m_ObjectHideFlags: 0
@@ -201,6 +172,81 @@ MonoBehaviour:
   m_FillOrigin: 0
   m_UseSpriteMesh: 0
   m_PixelsPerUnitMultiplier: 1
+--- !u!1 &2482652607341662027
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 5651237000881855675}
+  - component: {fileID: 6365591489309341101}
+  m_Layer: 6
+  m_Name: Oxygen Light2D Color Gradien Fill Displayer
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &5651237000881855675
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2482652607341662027}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 2700272758772538081}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &6365591489309341101
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2482652607341662027}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2b91822f603607e47a459210935ba761, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  colorGradient:
+    serializedVersion: 2
+    key0: {r: 1, g: 0.25490198, b: 0, a: 1}
+    key1: {r: 0, g: 1, b: 0.74509805, a: 1}
+    key2: {r: 0, g: 0, b: 0, a: 0}
+    key3: {r: 0, g: 0, b: 0, a: 0}
+    key4: {r: 0, g: 0, b: 0, a: 0}
+    key5: {r: 0, g: 0, b: 0, a: 0}
+    key6: {r: 0, g: 0, b: 0, a: 0}
+    key7: {r: 0, g: 0, b: 0, a: 0}
+    ctime0: 0
+    ctime1: 65535
+    ctime2: 0
+    ctime3: 0
+    ctime4: 0
+    ctime5: 0
+    ctime6: 0
+    ctime7: 0
+    atime0: 0
+    atime1: 65535
+    atime2: 0
+    atime3: 0
+    atime4: 0
+    atime5: 0
+    atime6: 0
+    atime7: 0
+    m_Mode: 0
+    m_ColorSpace: -1
+    m_NumColorKeys: 2
+    m_NumAlphaKeys: 2
+  light2D: {fileID: 3557012876342628447}
 --- !u!1 &2761395031861648228
 GameObject:
   m_ObjectHideFlags: 0
@@ -658,6 +704,7 @@ Transform:
   - {fileID: 1695927190748584390}
   - {fileID: 1152230411811405970}
   - {fileID: 7818074618682255003}
+  - {fileID: 5651237000881855675}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &5421320829156785971
@@ -675,7 +722,7 @@ MonoBehaviour:
   fillDisplayers:
   - {fileID: 1309040080257358541}
   - {fileID: 7079068066049734266}
-  - {fileID: 6971697137951366578}
+  - {fileID: 0}
 --- !u!114 &8162727726439314400
 MonoBehaviour:
   m_ObjectHideFlags: 0
