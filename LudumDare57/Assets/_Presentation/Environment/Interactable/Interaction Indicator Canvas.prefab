@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: 3505276145819954136}
   - component: {fileID: 1725229539814415326}
   - component: {fileID: 1279924771331446330}
-  m_Layer: 0
+  m_Layer: 5
   m_Name: Interaction Indicator Canvas
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -84,7 +84,7 @@ MonoBehaviour:
   m_FallbackScreenDPI: 96
   m_DefaultSpriteDPI: 96
   m_DynamicPixelsPerUnit: 1
-  m_PresetInfoIsWorld: 1
+  m_PresetInfoIsWorld: 0
 --- !u!114 &1279924771331446330
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -114,7 +114,7 @@ GameObject:
   - component: {fileID: 2637993003928990438}
   - component: {fileID: 559902219465986661}
   - component: {fileID: 6633068938727843350}
-  m_Layer: 0
+  m_Layer: 5
   m_Name: Interaction Indicator
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -202,7 +202,7 @@ GameObject:
   - component: {fileID: 2293516453383497431}
   - component: {fileID: 2965358543345571917}
   - component: {fileID: 5558411796086277700}
-  m_Layer: 0
+  m_Layer: 5
   m_Name: Text (TMP)
   m_TagString: Untagged
   m_Icon: {fileID: 0}

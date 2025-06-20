@@ -6,7 +6,6 @@ namespace DecoyInventorySystem.Implementations.MB.Implementations
     public class MBDecoyInventory : AMBDecoyInventory
     {
         [SerializeField] private int baseMaxDecoys;
-        [SerializeField] protected int startDecoys;
 
         private DecoyInventory _inventory;
 
@@ -16,8 +15,7 @@ namespace DecoyInventorySystem.Implementations.MB.Implementations
             {
                 _inventory ??= new()
                 {
-                    MaxDecoysCount = baseMaxDecoys,
-                    StoredDecoysCount = startDecoys
+                    MaxDecoysCount = baseMaxDecoys
                 };
 
                 return _inventory;

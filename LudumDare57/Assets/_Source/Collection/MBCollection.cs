@@ -6,17 +6,17 @@ namespace CollectionSystem
 {
     public class MBCollection : MonoBehaviour
     {
-        [SerializeField] private CollectableObjectWrapper[] collectableObjectWrappers = new CollectableObjectWrapper[0];
+        [SerializeField] private MBCollectableObject[] collectedObjects = new MBCollectableObject[0];
 
-        public UnityEvent<int> OnObjectsCollected;
+        public event Action<int> OnObjectsCollected;
+
         public UnityEvent OnAllObjectsCollected;
 
         private void Start()
         {
-            foreach (var collectableObjectWrapper in collectableObjectWrappers)
+            foreach (var collectableObject in collectedObjects)
             {
-                collectableObjectWrapper.CollectableObject.OnCollected += collectableObjectWrapper.OnObjectCollected.Invoke;
-                collectableObjectWrapper.CollectableObject.OnCollected += CheckIfAllObjectCollected;
+                collectableObject.OnCollected += CheckIfAllObjectCollected;
             }
         }
 
@@ -25,9 +25,9 @@ namespace CollectionSystem
             int collectedObjectsCount = 0;
             bool allObjectsCollected = true;
 
-            foreach (var collectableObjectWrapper in collectableObjectWrappers)
+            foreach (var collectableObject in collectedObjects)
             {
-                if (!collectableObjectWrapper.CollectableObject.IsCollected)
+                if (!collectableObject.IsCollected)
                     allObjectsCollected = false;
                 else
                     collectedObjectsCount++;
@@ -37,13 +37,6 @@ namespace CollectionSystem
 
             if (allObjectsCollected)
                 OnAllObjectsCollected?.Invoke();
-        }
-
-        [Serializable]
-        private class CollectableObjectWrapper
-        {
-            [field: SerializeField] public MBCollectableObject CollectableObject { get; private set; }
-            [field: SerializeField] public UnityEvent OnObjectCollected { get; private set; }
         }
     }
 }

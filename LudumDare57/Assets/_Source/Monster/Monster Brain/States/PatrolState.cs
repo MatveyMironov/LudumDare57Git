@@ -48,12 +48,9 @@ namespace MonsterBrainSystem
             else
                 _nextWaypointIndex = 0;
 
-            Transform nextWaypoint = _objectives.Route[_nextWaypointIndex];
+            Vector3 nextWaypoint = _objectives.Route[_nextWaypointIndex];
 
-            if (nextWaypoint == null)
-                return;
-
-            _movement.MoveToPosition(nextWaypoint.position);
+            _movement.MoveToPosition(nextWaypoint);
         }
     }
 }
