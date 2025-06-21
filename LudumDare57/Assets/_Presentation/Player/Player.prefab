@@ -106,7 +106,7 @@ SpriteRenderer:
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 1495216819
-  m_SortingLayer: 2
+  m_SortingLayer: 3
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: ef922d1cfa853074aa06f3bf95d5b803, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -211,7 +211,7 @@ SpriteRenderer:
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 1495216819
-  m_SortingLayer: 2
+  m_SortingLayer: 3
   m_SortingOrder: -1
   m_Sprite: {fileID: 21300000, guid: 6e64021426f9fe44890943c41dfa172c, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -1003,38 +1003,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 6931483088435895488}
     m_Modifications:
-    - target: {fileID: 3665347198199589719, guid: 6549cb61f345ce741b948aa421d790af, type: 3}
-      propertyPath: m_ApplyToSortingLayers.Array.size
-      value: 7
-      objectReference: {fileID: 0}
-    - target: {fileID: 3665347198199589719, guid: 6549cb61f345ce741b948aa421d790af, type: 3}
-      propertyPath: m_ApplyToSortingLayers.Array.data[0]
-      value: -1237817199
-      objectReference: {fileID: 0}
-    - target: {fileID: 3665347198199589719, guid: 6549cb61f345ce741b948aa421d790af, type: 3}
-      propertyPath: m_ApplyToSortingLayers.Array.data[1]
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 3665347198199589719, guid: 6549cb61f345ce741b948aa421d790af, type: 3}
-      propertyPath: m_ApplyToSortingLayers.Array.data[2]
-      value: 2077254217
-      objectReference: {fileID: 0}
-    - target: {fileID: 3665347198199589719, guid: 6549cb61f345ce741b948aa421d790af, type: 3}
-      propertyPath: m_ApplyToSortingLayers.Array.data[3]
-      value: -1043702739
-      objectReference: {fileID: 0}
-    - target: {fileID: 3665347198199589719, guid: 6549cb61f345ce741b948aa421d790af, type: 3}
-      propertyPath: m_ApplyToSortingLayers.Array.data[4]
-      value: 1607848625
-      objectReference: {fileID: 0}
-    - target: {fileID: 3665347198199589719, guid: 6549cb61f345ce741b948aa421d790af, type: 3}
-      propertyPath: m_ApplyToSortingLayers.Array.data[5]
-      value: 1495216819
-      objectReference: {fileID: 0}
-    - target: {fileID: 3665347198199589719, guid: 6549cb61f345ce741b948aa421d790af, type: 3}
-      propertyPath: m_ApplyToSortingLayers.Array.data[6]
-      value: -976315551
-      objectReference: {fileID: 0}
+    - target: {fileID: 2214593126009027880, guid: 6549cb61f345ce741b948aa421d790af, type: 3}
+      propertyPath: playerControlsProvider
+      value: 
+      objectReference: {fileID: 832117851959514655}
     - target: {fileID: 6443542364798656374, guid: 6549cb61f345ce741b948aa421d790af, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0.18
@@ -1079,46 +1051,6 @@ PrefabInstance:
       propertyPath: aimTarget
       value: 
       objectReference: {fileID: 1186347016640139271}
-    - target: {fileID: 7528230291768743146, guid: 6549cb61f345ce741b948aa421d790af, type: 3}
-      propertyPath: flashlightConfigurations.Array.data[0].<LightConfiguration>k__BackingField.<RadiusLightInnerRadius>k__BackingField
-      value: 0.5
-      objectReference: {fileID: 0}
-    - target: {fileID: 7528230291768743146, guid: 6549cb61f345ce741b948aa421d790af, type: 3}
-      propertyPath: flashlightConfigurations.Array.data[1].<LightConfiguration>k__BackingField.<RadiusLightInnerRadius>k__BackingField
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 8723231471138813870, guid: 6549cb61f345ce741b948aa421d790af, type: 3}
-      propertyPath: m_ApplyToSortingLayers.Array.size
-      value: 7
-      objectReference: {fileID: 0}
-    - target: {fileID: 8723231471138813870, guid: 6549cb61f345ce741b948aa421d790af, type: 3}
-      propertyPath: m_ApplyToSortingLayers.Array.data[0]
-      value: -1237817199
-      objectReference: {fileID: 0}
-    - target: {fileID: 8723231471138813870, guid: 6549cb61f345ce741b948aa421d790af, type: 3}
-      propertyPath: m_ApplyToSortingLayers.Array.data[1]
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 8723231471138813870, guid: 6549cb61f345ce741b948aa421d790af, type: 3}
-      propertyPath: m_ApplyToSortingLayers.Array.data[2]
-      value: 2077254217
-      objectReference: {fileID: 0}
-    - target: {fileID: 8723231471138813870, guid: 6549cb61f345ce741b948aa421d790af, type: 3}
-      propertyPath: m_ApplyToSortingLayers.Array.data[3]
-      value: -1043702739
-      objectReference: {fileID: 0}
-    - target: {fileID: 8723231471138813870, guid: 6549cb61f345ce741b948aa421d790af, type: 3}
-      propertyPath: m_ApplyToSortingLayers.Array.data[4]
-      value: 1607848625
-      objectReference: {fileID: 0}
-    - target: {fileID: 8723231471138813870, guid: 6549cb61f345ce741b948aa421d790af, type: 3}
-      propertyPath: m_ApplyToSortingLayers.Array.data[5]
-      value: 1495216819
-      objectReference: {fileID: 0}
-    - target: {fileID: 8723231471138813870, guid: 6549cb61f345ce741b948aa421d790af, type: 3}
-      propertyPath: m_ApplyToSortingLayers.Array.data[6]
-      value: -976315551
-      objectReference: {fileID: 0}
     - target: {fileID: 8743953894339736022, guid: 6549cb61f345ce741b948aa421d790af, type: 3}
       propertyPath: m_Name
       value: Flashlight
@@ -1126,36 +1058,14 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents:
-    - targetCorrespondingSourceObject: {fileID: 8743953894339736022, guid: 6549cb61f345ce741b948aa421d790af, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 3135244859209623322}
+    m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 6549cb61f345ce741b948aa421d790af, type: 3}
---- !u!1 &5061390667809083557 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 8743953894339736022, guid: 6549cb61f345ce741b948aa421d790af, type: 3}
-  m_PrefabInstance: {fileID: 4568172037041791347}
-  m_PrefabAsset: {fileID: 0}
---- !u!114 &3135244859209623322
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5061390667809083557}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 599503c6346a1eb4ab5cf1636572c903, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  flashlight: {fileID: 6277118290469434777}
-  playerControlsProvider: {fileID: 832117851959514655}
 --- !u!114 &6277118290469434777 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 7528230291768743146, guid: 6549cb61f345ce741b948aa421d790af, type: 3}
   m_PrefabInstance: {fileID: 4568172037041791347}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5061390667809083557}
+  m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: f3b0704c595d77d499b89c950944bd76, type: 3}
@@ -1222,6 +1132,30 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 2924677688442344520, guid: 656a17ad44846f245a52306dc3d616e0, type: 3}
+      propertyPath: m_ApplyToSortingLayers.Array.size
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 2924677688442344520, guid: 656a17ad44846f245a52306dc3d616e0, type: 3}
+      propertyPath: m_ApplyToSortingLayers.Array.data[2]
+      value: -1043702739
+      objectReference: {fileID: 0}
+    - target: {fileID: 2924677688442344520, guid: 656a17ad44846f245a52306dc3d616e0, type: 3}
+      propertyPath: m_ApplyToSortingLayers.Array.data[3]
+      value: 1607848625
+      objectReference: {fileID: 0}
+    - target: {fileID: 2924677688442344520, guid: 656a17ad44846f245a52306dc3d616e0, type: 3}
+      propertyPath: m_ApplyToSortingLayers.Array.data[4]
+      value: 1495216819
+      objectReference: {fileID: 0}
+    - target: {fileID: 2924677688442344520, guid: 656a17ad44846f245a52306dc3d616e0, type: 3}
+      propertyPath: m_ApplyToSortingLayers.Array.data[5]
+      value: -976315551
+      objectReference: {fileID: 0}
+    - target: {fileID: 6365591489309341101, guid: 656a17ad44846f245a52306dc3d616e0, type: 3}
+      propertyPath: light2D
+      value: 
+      objectReference: {fileID: 5435775164458790101}
     - target: {fileID: 8162727726439314400, guid: 656a17ad44846f245a52306dc3d616e0, type: 3}
       propertyPath: oxygenTank
       value: 
@@ -1240,3 +1174,14 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 2700272758772538081, guid: 656a17ad44846f245a52306dc3d616e0, type: 3}
   m_PrefabInstance: {fileID: 7203870901881354397}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &5435775164458790101 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 2924677688442344520, guid: 656a17ad44846f245a52306dc3d616e0, type: 3}
+  m_PrefabInstance: {fileID: 7203870901881354397}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 073797afb82c5a1438f328866b10b3f0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 

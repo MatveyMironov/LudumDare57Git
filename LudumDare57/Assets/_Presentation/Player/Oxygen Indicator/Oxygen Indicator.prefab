@@ -675,7 +675,6 @@ MonoBehaviour:
   fillDisplayers:
   - {fileID: 1309040080257358541}
   - {fileID: 7079068066049734266}
-  - {fileID: 0}
   - {fileID: 6365591489309341101}
 --- !u!114 &8162727726439314400
 MonoBehaviour:

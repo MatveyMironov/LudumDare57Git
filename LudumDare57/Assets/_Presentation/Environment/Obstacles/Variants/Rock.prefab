@@ -2544,62 +2544,6 @@ PrefabInstance:
       propertyPath: m_Name
       value: Rock
       objectReference: {fileID: 0}
-    - target: {fileID: 8046458316232773378, guid: 65cd67deb6629d14eb725502dad101a3, type: 3}
-      propertyPath: m_Enabled
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 8046458316232773378, guid: 65cd67deb6629d14eb725502dad101a3, type: 3}
-      propertyPath: m_InstanceId
-      value: -72448
-      objectReference: {fileID: 0}
-    - target: {fileID: 8046458316232773378, guid: 65cd67deb6629d14eb725502dad101a3, type: 3}
-      propertyPath: m_HasRenderer
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 8046458316232773378, guid: 65cd67deb6629d14eb725502dad101a3, type: 3}
-      propertyPath: m_LocalBounds.m_Extent.x
-      value: 4
-      objectReference: {fileID: 0}
-    - target: {fileID: 8046458316232773378, guid: 65cd67deb6629d14eb725502dad101a3, type: 3}
-      propertyPath: m_LocalBounds.m_Extent.y
-      value: 4
-      objectReference: {fileID: 0}
-    - target: {fileID: 8046458316232773378, guid: 65cd67deb6629d14eb725502dad101a3, type: 3}
-      propertyPath: m_ShapePath.Array.data[0].x
-      value: -4
-      objectReference: {fileID: 0}
-    - target: {fileID: 8046458316232773378, guid: 65cd67deb6629d14eb725502dad101a3, type: 3}
-      propertyPath: m_ShapePath.Array.data[0].y
-      value: -4
-      objectReference: {fileID: 0}
-    - target: {fileID: 8046458316232773378, guid: 65cd67deb6629d14eb725502dad101a3, type: 3}
-      propertyPath: m_ShapePath.Array.data[1].x
-      value: -4
-      objectReference: {fileID: 0}
-    - target: {fileID: 8046458316232773378, guid: 65cd67deb6629d14eb725502dad101a3, type: 3}
-      propertyPath: m_ShapePath.Array.data[1].y
-      value: 4
-      objectReference: {fileID: 0}
-    - target: {fileID: 8046458316232773378, guid: 65cd67deb6629d14eb725502dad101a3, type: 3}
-      propertyPath: m_ShapePath.Array.data[2].x
-      value: 4
-      objectReference: {fileID: 0}
-    - target: {fileID: 8046458316232773378, guid: 65cd67deb6629d14eb725502dad101a3, type: 3}
-      propertyPath: m_ShapePath.Array.data[2].y
-      value: 4
-      objectReference: {fileID: 0}
-    - target: {fileID: 8046458316232773378, guid: 65cd67deb6629d14eb725502dad101a3, type: 3}
-      propertyPath: m_ShapePath.Array.data[3].x
-      value: 4
-      objectReference: {fileID: 0}
-    - target: {fileID: 8046458316232773378, guid: 65cd67deb6629d14eb725502dad101a3, type: 3}
-      propertyPath: m_ShapePath.Array.data[3].y
-      value: -4
-      objectReference: {fileID: 0}
-    - target: {fileID: 8046458316232773378, guid: 65cd67deb6629d14eb725502dad101a3, type: 3}
-      propertyPath: m_ApplyToSortingLayers.Array.size
-      value: 0
-      objectReference: {fileID: 0}
     - target: {fileID: 9030479134841395867, guid: 65cd67deb6629d14eb725502dad101a3, type: 3}
       propertyPath: m_Sprite
       value: 
@@ -2618,11 +2562,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 9030479134841395867, guid: 65cd67deb6629d14eb725502dad101a3, type: 3}
       propertyPath: m_SortingLayer
-      value: -1
-      objectReference: {fileID: 0}
-    - target: {fileID: 9030479134841395867, guid: 65cd67deb6629d14eb725502dad101a3, type: 3}
-      propertyPath: m_SortingLayerID
-      value: -1237817199
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []

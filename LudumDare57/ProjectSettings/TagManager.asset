@@ -50,6 +50,9 @@ TagManager:
   - name: Default
     uniqueID: 0
     locked: 0
+  - name: Hazardous
+    uniqueID: 3309764227
+    locked: 0
   - name: Interactable
     uniqueID: 1607848625
     locked: 0
@@ -68,6 +71,9 @@ TagManager:
   - name: UI
     uniqueID: 1236440391
     locked: 0
-  - name: Foreground
+  - name: Far Foreground
+    uniqueID: 2251603545
+    locked: 0
+  - name: Close Foreground
     uniqueID: 2759039871
     locked: 0

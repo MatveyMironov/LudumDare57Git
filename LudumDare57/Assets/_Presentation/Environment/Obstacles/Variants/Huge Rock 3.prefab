@@ -53,6 +53,10 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4503767641440612895, guid: b836f0cb135c18f45a3b6314c569ed8d, type: 3}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4503767641440612895, guid: b836f0cb135c18f45a3b6314c569ed8d, type: 3}
       propertyPath: m_Points.m_Paths.Array.size
       value: 1
       objectReference: {fileID: 0}
